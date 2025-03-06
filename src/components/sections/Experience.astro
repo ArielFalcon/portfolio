@@ -11,7 +11,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       const startYear = new Date(startDate).getFullYear()
       const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
-      const timeLapse = new Date().getTime() - new Date(startDate).getTime()
+      const timeLapse = (endDate!=null?new Date(endDate).getTime():new Date().getTime()) - new Date(startDate).getTime()
       const workedYears = Math.floor(+timeLapse/millisecondsInYear)
       const workedMonths = Math.floor((+timeLapse % millisecondsInYear) / (millisecondsInYear / 12))
       const workedTime = `${workedYears}y : ${workedMonths}m`
