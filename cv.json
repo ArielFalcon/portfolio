@@ -90,16 +90,54 @@
   ],
   "work": [
     {
+      "name": "Aubay Spain",
+      "position": "Full-Stack Developer",
+      "location_type": "Hybrid",
+      "location": "Madrid, ES",
+      "url": "https://www.linkedin.com/company/aubay-spain",
+      "startDate": "2025-09-25",
+      "endDate": null,
+      "summary": "Working in BNP Paribas PF team, developing tailored software solutions for their internal needs. Working with Angular and Java / Spring. Banking environment, focused on security, performance and clean code.",
+      "responsibilities": [
+        "Developing and maintaining internal tools for client managing.",
+        "Building a cross-platform component library for standardized UI/UX across applications."
+      ],
+      "achievements": [
+        "Survived first day without breaking prod!"
+      ],
+      "skills": {
+        "TypeScript": "simple-icons:typescript",
+        "Angular": "simple-icons:angular",
+        "CSS": "ri:css3-fill",
+        "SCSS": "simple-icons:sass",
+        "i18n": "simple-icons:i18next",
+        "Jest": "simple-icons:jest",
+        "Java": "ri:java-line",
+        "Spring": "simple-icons:spring",
+        "Spring Boot": "simple-icons:springboot",
+        "Docker": "simple-icons:docker",
+        "Kubernetes": "simple-icons:kubernetes",
+        "Helm": "simple-icons:helm",
+        "GitLab": "mdi:gitlab",
+        "Figma": "simple-icons:figma",
+        "SonarQube": "simple-icons:sonarqube",
+        "Fortify": "simple-icons:fortinet",
+        "Vault": "simple-icons:vault",
+        "IBM Cloud": "simple-icons:ibmcloud",
+        "Linux": "simple-icons:linux"
+      }
+    },
+    {
       "name": "Zener Soft Consulting",
       "position": "Full-Stack Developer",
       "location_type": "Remote",
       "location": "ES",
       "url": "https://www.linkedin.com/company/aitor-pelaez-zenerconsulting-com/",
       "startDate": "2023-07-03",
-      "endDate": null,
+      "endDate": "2025-09-24",
       "summary": "Experienced in developing high-complexity, scalable, data-driven projects with a focus on performance, user experience, and system integration. Participated in development of a complex Micro-services, Hexagonal, DDD, Spring Java project.",
       "highlights": [
-        "Developed a data-intensive Angular project for internal use in the national healthcare system, focusing on managing complex data sets and implementing business logic."
+        "Developed a data-intensive Angular project for internal use in the national healthcare system, focusing on managing complex data sets and implementing business logic. Builted an hexagonal microservice for data processing in Department of Treasury of Spain."
       ],
       "responsibilities": [
         "Developed and maintained projects, ensuring scalability, performance, clean code, efficient architecture and robust user experiences.",
@@ -135,8 +173,9 @@
         "GitHub": "mdi:github",
         "Figma": "simple-icons:figma",
         "Jira": "simple-icons:jira",
+        "Docker": "simple-icons:docker",
         "Kubernetes": "simple-icons:kubernetes",
-        "Docker": "simple-icons:docker"
+        "Skaffold": "simple-icons:skaffold"
       }
     }
   ],
