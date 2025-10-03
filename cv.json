@@ -172,6 +172,7 @@
         "i18n": "simple-icons:i18next",
         "Git": "mdi:git",
         "GitHub": "mdi:github",
+        "GitHub Actions": "simple-icons:githubactions",
         "Figma": "simple-icons:figma",
         "Jira": "simple-icons:jira",
         "Docker": "simple-icons:docker",
