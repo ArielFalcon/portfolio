@@ -166,6 +166,7 @@
         "Jest": "simple-icons:jest",
         "Java": "ri:java-line",
         "Spring": "simple-icons:spring",
+        "RabbitMQ": "simple-icons:rabbitmq",
         "NodeJS": "ri:nodejs-line",
         "Postman": "simple-icons:postman",
         "i18n": "simple-icons:i18next",
