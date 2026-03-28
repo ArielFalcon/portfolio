@@ -100,10 +100,13 @@
       "summary": "Working in BNP Paribas PF team, developing tailored software solutions for their internal needs. Working with Angular and Java / Spring. Banking environment, focused on security, performance and clean code.",
       "responsibilities": [
         "Developing and maintaining internal tools for client managing.",
-        "Building a cross-platform component library for standardized UI/UX across applications."
+        "Building a cross-platform component library for standardized UI/UX across applications.",
+        "Building a sales management application with batch processing pipelines and real-time Outlook calendar integration, under strict banking security standards."
       ],
       "achievements": [
-        "Survived first week without breaking prod!"
+        "Optimized the data synchronization flow, reducing processing time by 95%.",
+        "Delivered a cross-platform component library that unified UI/UX standards across multiple internal applications.",
+        "Shipped a sales management platform with batch processing pipelines and real-time Outlook calendar integration, meeting the strict security requirements of a banking environment."
       ],
       "skills": {
         "TypeScript": "simple-icons:typescript",
