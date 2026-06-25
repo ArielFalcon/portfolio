@@ -108,4 +108,9 @@ interface Reference {
   reference: string;
 }
 
-type Highlights = Array<String>;
+interface HighlightItem {
+  icon: string;
+  text: string;
+}
+
+type Highlights = Array<HighlightItem>;

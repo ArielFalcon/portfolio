@@ -523,13 +523,61 @@
   ],
   "projects": [
     {
+      "name": "Panchito",
+      "isActive": true,
+      "description": "AI-powered, application-agnostic testing platform that automatically generates, executes and maintains Playwright E2E and unit tests on every deployment. It analyzes source code changes, identifies the affected application areas across repositories, validates them against a real running environment, and commits verified test suites automatically.",
+      "highlights": [
+        {
+          "icon": "ri:shield-check-line",
+          "text": "Deterministic engine with CI-enforced infra ↔ AI separation"
+        },
+        {
+          "icon": "ri:focus-3-line",
+          "text": "Impact analysis of the real change blast radius across repos"
+        },
+        {
+          "icon": "ri:bar-chart-box-line",
+          "text": "Objective change-coverage verification of generated tests"
+        },
+        {
+          "icon": "ri:brain-line",
+          "text": "Continuous learning pipeline that extracts reusable rules"
+        },
+        {
+          "icon": "ri:robot-2-line",
+          "text": "Provider-agnostic AI runtime (OpenCode, Codex) + independent reviewer"
+        }
+      ],
+      "github": "https://github.com/ArielFalcon/panchito",
+      "stack": {
+        "TypeScript": "simple-icons:typescript",
+        "NodeJS": "ri:nodejs-line",
+        "Playwright": "simple-icons:playwright",
+        "Docker": "simple-icons:docker",
+        "SQLite": "simple-icons:sqlite",
+        "ast-grep": "ri:node-tree",
+        "Lizard": "ri:bar-chart-box-line",
+        "Senera": "ri:robot-2-fill"
+      },
+      "url": "https://panchito-nu.vercel.app/"
+    },
+    {
       "name": "CV Matching System",
       "isActive": true,
       "description": "A propiertary code AI-driven CV matching system to connect the offer and the best candidates. Automates the recruitment process.",
       "highlights": [
-        "🎯 Tailored job opportunities",
-        "✨ AI-driven complex workflows ",
-        "🚀 80% increase in productivity"
+        {
+          "icon": "ri:focus-3-line",
+          "text": "Tailored job opportunities"
+        },
+        {
+          "icon": "ri:sparkling-2-line",
+          "text": "AI-driven complex workflows"
+        },
+        {
+          "icon": "ri:rocket-line",
+          "text": "80% increase in productivity"
+        }
       ],
       "stack": {
         "Python": "simple-icons:python",
@@ -542,33 +590,22 @@
       "url": "https://www.gringojobs.com"
     },
     {
-      "name": "TODO List",
-      "isActive": false,
-      "description": "A simple app to showcase my skills in Angular. It's a TODO list with a beautiful and smooth UI, good user experience and best practices. Not finished yet.",
-      "highlights": [
-        "📝 In progress",
-        "😮‍ Made-from-scratch complex components",
-        "😊 Beautiful and smooth UI, good user experience",
-        "\uD83E\uDD16 Server Side Rendering"
-      ],
-      "github": "https://github.com/ArielFalcon/TODO-list",
-      "stack": {
-        "Angular": "simple-icons:angular",
-        "RxJS": "simple-icons:reactivex",
-        "TypeScript": "simple-icons:typescript",
-        "SCSS": "simple-icons:sass",
-        "NodeJS": "ri:nodejs-line",
-        "Firebase": "simple-icons:firebase"
-      }
-    },
-    {
       "name": "Portfolio",
       "isActive": true,
       "description": "This website! My personal portfolio, made with Astro. Integrates many themes and key shortcut actions.",
       "highlights": [
-        "🚀 Fast, modern and SEO-friendly",
-        "🎨 Printable CV generation",
-        "〔N〕Crazy NeoVim mode, try it!"
+        {
+          "icon": "ri:rocket-line",
+          "text": "Fast, modern and SEO-friendly"
+        },
+        {
+          "icon": "ri:printer-line",
+          "text": "Printable CV generation"
+        },
+        {
+          "icon": "ri:terminal-box-line",
+          "text": "Crazy NeoVim mode, try it!"
+        }
       ],
       "github": "https://github.com/ArielFalcon/portfolio",
       "stack": {
@@ -586,9 +623,18 @@
       "isActive": false,
       "description": "A web scraper that uses AI to extract data from websites. It's a tool to automate the data extraction process, using machine learning to identify and extract data from websites.",
       "highlights": [
-        "🤖 Simple script",
-        "🔍 Data Extraction",
-        "🌐 Web scraping"
+        {
+          "icon": "ri:robot-2-line",
+          "text": "Simple script"
+        },
+        {
+          "icon": "ri:search-line",
+          "text": "Data Extraction"
+        },
+        {
+          "icon": "ri:global-line",
+          "text": "Web scraping"
+        }
       ],
       "stack": {
         "Javascript": "simple-icons:javascript",
@@ -603,9 +649,18 @@
       "isActive": true,
       "description": "A Space Invaders game with a retro look, made with Vue3 and TypeScript. It's a fun project to showcase my skills in Vue3 and TypeScript.",
       "highlights": [
-        "🚀 Space Invaders game",
-        "🛸 Retro fun",
-        "🎮 Vue3 + TypeScript"
+        {
+          "icon": "ri:gamepad-line",
+          "text": "Space Invaders game"
+        },
+        {
+          "icon": "ri:space-ship-line",
+          "text": "Retro fun"
+        },
+        {
+          "icon": "ri:code-s-slash-line",
+          "text": "Vue3 + TypeScript"
+        }
       ],
       "stack": {
         "Vue3": "ri:vuejs-line",

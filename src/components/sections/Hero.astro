@@ -8,7 +8,7 @@ const { city, region, address } = location
 ---
 
 <Section className={Astro.props.className}>
-  <div class="min-w-[275px]">
+  <div class="min-w-0 sm:min-w-[275px]">
     <section
       id="about"
       aria-label="About me"
@@ -48,7 +48,7 @@ const { city, region, address } = location
           </div>
         </div>
       </div>
-      <div data-ccursor="noPadding" class='flex w-max gap-2 py-1 px-2 text-sm text-skin-muted'>
+      <div data-ccursor="noPadding" class='flex w-max max-w-full gap-2 py-1 px-2 text-sm text-skin-muted'>
         <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:world' width={20} height={20} />
         {address}, {city}, {region}
       </div>

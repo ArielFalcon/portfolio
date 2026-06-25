@@ -9,11 +9,14 @@ import { projects } from "@cv";
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
     {
       projects && projects.map(
-        ({ url, description, highlights, name, isActive, github, stack }) => {
+        ({ url, description, highlights, name, isActive, github, stack }, index) => {
           return (
             <div
               role="contentinfo"
-              class="grid-span-1 group relative flex min-h-80 flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 ring-skin-muted sm:hover:ring-2 sm:hover:ring-skin-hue sm:hover:bg-skin-muted transition-all duration-250 ease-in-out"
+              class:list={[
+                "group relative flex min-h-80 flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 ring-skin-muted sm:hover:ring-2 sm:hover:ring-skin-hue sm:hover:bg-skin-muted transition-all duration-250 ease-in-out",
+                index === 0 ? "md:col-span-2" : "col-span-1",
+              ]}
             >
               <div
                 class='relative z-10 flex items-center justify-between space-x-[10px]'
@@ -59,7 +62,12 @@ import { projects } from "@cv";
               </p>
               <ul class='z-10 mt-1 text-sm'>
                 {highlights.map((highlight) => {
-                  return <li data-ccursor class="w-max">{highlight}</li>;
+                  return (
+                    <li data-ccursor class="flex items-start gap-2 break-words">
+                      <Icon name={highlight.icon} class="size-4 shrink-0 mt-0.5 text-skin-hue" />
+                      <span>{highlight.text}</span>
+                    </li>
+                  );
                 })}
               </ul>
               
