@@ -7,7 +7,7 @@ const words = summary.split(' ');
 ---
 
 <Section className={Astro.props.className} title="About">
-  <p class="font-mono opacity-75 print:font-sans text-skin-hue font-semibold print:text-skin-base print:font-normal w-full select-none">
+  <p class="font-mono opacity-75 print:font-sans text-skin-hue font-semibold print:text-skin-base print:font-normal w-full select-none print:break-inside-avoid">
     {words.map((word) => (
       <span class="w-min sm:hover:bg-skin-button-muted transition-all duration-200 sm:hover:cursor-none">{word}</span> <span> </span>
     ))}

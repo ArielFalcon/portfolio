@@ -68,6 +68,118 @@ const { name} = basics;
     width: 100%;
   }
 
+  /* ----------------------------------------------------------------------
+     Print layout — robust, single-column document.
+     A CSS grid two-column layout cannot paginate cleanly: when one column
+     is taller than a page the grid row is split at an arbitrary point.
+     For print we collapse the whole page into one predictable top-to-bottom
+     flow that paginates correctly regardless of how large each section is.
+     ---------------------------------------------------------------------- */
+  @media print {
+    /* A zero page margin makes the browser drop its default header/footer
+       (the date + document title Chrome injects when printing). The visual
+       margins are restored with padding on <main> below. */
+    @page {
+      margin: 0;
+    }
+
+    /* Clean white sheet — printer-friendly and crisp regardless of theme. */
+    body {
+      background: #fff !important;
+    }
+
+    /* Strip interactive/dev chrome that must never reach the PDF. */
+    astro-dev-toolbar,
+    .c-cursor,
+    .footer-button,
+    #normal-footer {
+      display: none !important;
+    }
+
+    /* The PDF must never depend on entry-animation state (opacity/transform).
+       Without this, headless/early prints capture half-faded content. */
+    .slide-enter,
+    .slide-enter-content > * {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* Collapse the responsive grid into a single full-width column. */
+    main {
+      display: block !important;
+      max-width: 100% !important;
+      min-height: 0 !important;
+      margin: 0 !important;
+      padding: 1.3cm 1.4cm !important;
+      /* Apply the page padding to EVERY page fragment (not just the first),
+         so pages 2+ also get top/bottom breathing room while @page margin
+         stays 0 to keep the browser's header/footer suppressed. */
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    main > div {
+      display: block !important;
+      width: 100% !important;
+    }
+    /* Even vertical rhythm between every stacked section. */
+    main > div > * + *,
+    main > div + div {
+      margin-top: 1.15rem !important;
+    }
+
+    /* Follow document order in the printed sheet. The on-screen layout uses
+       `order-*` utilities (e.g. order-first on the nested Certificates section)
+       that would otherwise shuffle a linear printed document — reset them so
+       Education entries print before Certificates, as authored. */
+    section {
+      order: 0 !important;
+    }
+
+    /* Keep a section/entry heading with the content that follows it. */
+    h3,
+    h4 {
+      break-after: avoid-page;
+    }
+
+    /* The custom cursor (GSAP) writes inline transform/box-shadow/background
+       onto whatever element is hovered. If the pointer happens to sit over an
+       element when printing, that hover style bleeds into the PDF. Reset it. */
+    [data-ccursor] {
+      transform: none !important;
+      box-shadow: none !important;
+      background-image: none !important;
+      filter: none !important;
+      scale: none !important;
+    }
+
+    /* Certificates collapse to one compact line: "Name - Issuer (Year)". */
+    .cert-list li {
+      display: block;
+    }
+    .cert-list li > div {
+      display: inline;
+    }
+    .cert-list h3,
+    .cert-list h3 > a,
+    .cert-list .relative > div,
+    .cert-list time {
+      display: inline;
+      position: static;
+      margin: 0;
+    }
+    .cert-list h3::after {
+      content: " - ";
+      font-weight: 400;
+    }
+    .cert-list time::before {
+      content: " (";
+    }
+    .cert-list time::after {
+      content: ")";
+    }
+  }
+
   @keyframes slide-enter {
     0% {
       transform: translateY(10px);

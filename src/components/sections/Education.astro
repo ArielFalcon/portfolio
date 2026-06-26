@@ -16,7 +16,7 @@ import { certificates } from '@cv'
           const years = `${startYear} - ${endYear}`
 
           return (
-            <li class='flex items-baseline'>
+            <li class='flex items-baseline print:break-inside-avoid'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -55,11 +55,11 @@ import { certificates } from '@cv'
   {
     certificates.length > 0 && (
       <Section className={Astro.props.className} title='Certificates'>
-        <ul class='space-y-4 py-3 print:space-y-0'>
+        <ul class='cert-list space-y-4 py-3 print:space-y-0'>
           {certificates.map(({ name, date, issuer, url }) => {
             const certificateYear = new Date(date).getFullYear()
             return (
-              <li class='flex items-baseline'>
+              <li class='flex items-baseline print:break-inside-avoid'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
@@ -86,9 +86,7 @@ import { certificates } from '@cv'
                     </a>
                   </h3>
                   <div class='text-sm text-skin-muted'>{issuer}</div>
-                  <time data-ccursor="lift" class='right-0 top-0 text-xs text-skin-muted md:absolute md:block sm:hover:cursor-none sm:hover:text-skin-hue'>
-                    {certificateYear}
-                  </time>
+                  <time data-ccursor="lift" class='right-0 top-0 text-xs text-skin-muted md:absolute md:block sm:hover:cursor-none sm:hover:text-skin-hue'>{certificateYear}</time>
                 </div>
               </li>
             )

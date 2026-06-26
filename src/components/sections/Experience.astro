@@ -49,7 +49,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
               )}
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm">
                 {summary && (
-                  <div class="flex flex-col gap-1">
+                  <div class="flex flex-col gap-1 print:break-inside-avoid">
                     <h4 class="print:font-bold" data-ccursor="lift">Summary:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {Array.isArray(summary) ? (
@@ -64,9 +64,9 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                 )}
 
                 {(responsibilities || achievements) &&  (
-                <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-16 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden duration-200 ease-out">
+                <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-16 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden print:overflow-visible duration-200 ease-out">
                 {responsibilities && (
-                  <div class="flex flex-col gap-1">
+                  <div class="flex flex-col gap-1 print:break-inside-avoid">
                     <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Responsibilities:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
@@ -77,7 +77,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                 )}
 
                 {achievements && (
-                  <div class="flex flex-col gap-1">
+                  <div class="flex flex-col gap-1 print:break-inside-avoid">
                     <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Achievements:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {achievements.map(achievement => (
