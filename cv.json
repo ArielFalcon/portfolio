@@ -523,7 +523,7 @@
   ],
   "projects": [
     {
-      "name": "Panchito",
+      "name": "Qayaba",
       "isActive": true,
       "description": "AI-powered, application-agnostic testing platform that automatically generates, executes and maintains Playwright E2E and unit tests on every deployment. It analyzes source code changes, identifies the affected application areas across repositories, validates them against a real running environment, and commits verified test suites automatically.",
       "highlights": [
@@ -548,7 +548,7 @@
           "text": "Provider-agnostic AI runtime (OpenCode, Codex) + independent reviewer"
         }
       ],
-      "github": "https://github.com/ArielFalcon/panchito",
+      "github": "https://github.com/ArielFalcon/qayaba",
       "stack": {
         "TypeScript": "simple-icons:typescript",
         "NodeJS": "ri:nodejs-line",
@@ -559,7 +559,7 @@
         "Lizard": "ri:bar-chart-box-line",
         "Senera": "ri:robot-2-fill"
       },
-      "url": "https://panchito-nu.vercel.app/"
+      "url": "https://qayaba.vercel.app/"
     },
     {
       "name": "CV Matching System",
