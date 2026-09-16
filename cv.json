@@ -9,7 +9,7 @@
     "image": "/pfp.webp",
     "email": "falconyumn@gmail.com",
     "url": "https://www.linkedin.com/in/arielfalcon/",
-    "summary": "Full-Stack web developer, at the moment. I work with Angular and Java / Spring mainly. Currently learning about DevOps and AI driven development topics; like harness engineering.",
+    "summary": "Full-Stack Dev | AI Engineer. Angular and Java / Spring, software architecture and complex harness generation for agent orchestration.",
     "theme": "red",
     "location": {
       "address": "Alcalá de Henares",
@@ -62,8 +62,8 @@
       "url": "https://www.linkedin.com/company/teide-centros-de-formaci%C3%B3n",
       "area": "Web Development",
       "studyType": "Full-time student",
-      "startDate": "2023-04-01",
-      "endDate": "2023-09-01"
+      "startDate": "2021-04-01",
+      "endDate": "2022-09-01"
     },
     {
       "institution": "Calixto García Medical School – Cuba",
@@ -71,7 +71,7 @@
       "area": "Medicine (unfinished)",
       "studyType": "Full-time student",
       "startDate": "2018-9-01",
-      "endDate": "2021-7-01"
+      "endDate": "2021-01-01"
     }
   ],
   "certificates": [
@@ -91,14 +91,15 @@
   "work": [
     {
       "name": "Aubay Spain",
-      "position": "Full-Stack Developer",
+      "position": "AI Driven Full Stack Developer",
       "location_type": "Hybrid",
       "location": "Madrid, ES",
       "url": "https://www.linkedin.com/company/aubay-spain",
       "startDate": "2025-09-25",
       "endDate": null,
-      "summary": "Working in BNP Paribas PF team, developing tailored software solutions for their internal needs. Working with Angular and Java / Spring. Banking environment, focused on security, performance and clean code.",
+      "summary": "Working in BNP Paribas PF team, developing tailored software solutions for their internal needs. Working with Angular and Java / Spring, accelerated by agent orchestration and harness engineering in a controlled, secured banking environment focused on security, performance and clean code.",
       "responsibilities": [
+        "Orchestrating AI agents and managing development harnesses to speed up delivery inside a controlled, secured environment.",
         "Developing and maintaining internal tools for client managing.",
         "Building a cross-platform component library for standardized UI/UX across applications.",
         "Building a sales management application with batch processing pipelines and real-time Outlook calendar integration, under strict banking security standards."
@@ -136,7 +137,7 @@
       "location_type": "Remote",
       "location": "ES",
       "url": "https://www.linkedin.com/company/aitor-pelaez-zenerconsulting-com/",
-      "startDate": "2023-07-03",
+      "startDate": "2022-01-03",
       "endDate": "2025-09-24",
       "summary": "Experienced in developing high-complexity, scalable, data-driven projects with a focus on performance, user experience, and system integration. Participated in development of a complex Micro-services, Hexagonal, DDD, Spring Java project.",
       "highlights": [
@@ -532,6 +533,14 @@
           "text": "Deterministic engine with CI-enforced infra ↔ AI separation"
         },
         {
+          "icon": "ri:book-open-line",
+          "text": "Harness Engineering with RAG-grounded agent context"
+        },
+        {
+          "icon": "ri:links-line",
+          "text": "Multi-repo code comprehension that resolves how services communicate across the whole system"
+        },
+        {
           "icon": "ri:focus-3-line",
           "text": "Impact analysis of the real change blast radius across repos"
         },
@@ -557,7 +566,7 @@
         "SQLite": "simple-icons:sqlite",
         "ast-grep": "ri:node-tree",
         "Lizard": "ri:bar-chart-box-line",
-        "Senera": "ri:robot-2-fill"
+        "Serena": "ri:robot-2-fill"
       },
       "url": "https://qayaba.vercel.app/"
     },
